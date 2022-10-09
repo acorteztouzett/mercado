@@ -1,7 +1,7 @@
 import { ArrowLeftOutlined, LoadingOutlined } from '@ant-design/icons';
 import { ColorChooser, ImageLoader, MessageDisplay } from 'components/common';
 import { ProductShowcaseGrid } from 'components/product';
-import { RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes';
+import { HOME, RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes';
 import { displayMoney } from 'helpers/utils';
 import {
   useBasket,
@@ -66,7 +66,7 @@ const ViewProduct = () => {
       )}
       {(product && !isLoading) && (
         <div className="product-view">
-          <Link to={SHOP}>
+          <Link to={HOME}>
             <h3 className="button-link d-inline-flex">
               <ArrowLeftOutlined />
               &nbsp; Regresar a la tienda
@@ -143,10 +143,6 @@ const ViewProduct = () => {
             </div>
           </div>
           <div style={{ marginTop: '10rem' }}>
-            <div className="display-header">
-              <h1>Recomendados</h1>
-              <Link to={RECOMMENDED_PRODUCTS}>Ver todos</Link>
-            </div>
             {errorFeatured && !isLoadingFeatured ? (
               <MessageDisplay
                 message={error}

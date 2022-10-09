@@ -1,7 +1,7 @@
 export const HOME = '/';
-export const SHOP = '/shop';
-export const FEATURED_PRODUCTS = '/featured';
-export const RECOMMENDED_PRODUCTS = '/recommended';
+export const MERCADO1 = '/mercado1';
+export const MERCADO2 = '/mercado2';
+export const MERCADO3 = '/mercado3';
 export const ACCOUNT = '/account';
 export const ACCOUNT_EDIT = '/account/edit';
 export const ADMIN_DASHBOARD = '/admin/dashboard';

@@ -5,7 +5,7 @@ import bannerImg from 'images/banner-recomendados.jpeg';
 import React from 'react';
 
 const RecommendedProducts = () => {
-  useDocumentTitle('Productos Recomendados');
+  useDocumentTitle('Mercado 3');
   useScrollTop();
 
   const {

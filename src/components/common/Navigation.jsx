@@ -73,21 +73,14 @@ const Navigation = () => {
       </div>
       <ul className="navigation-menu-main">
         <li><NavLink activeClassName="navigation-menu-active" exact to={ROUTE.HOME}>Inicio</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.SHOP}>Tienda</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.FEATURED_PRODUCTS}>Destacados</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.RECOMMENDED_PRODUCTS}>Recomendados</NavLink></li>
+        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO1}>Mercado 1</NavLink></li>
+        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO2}>Mercado 2</NavLink></li>
+        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO3}>Mercado 3</NavLink></li>
         <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.BLOG}>Blog</NavLink></li>
         <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.UBICANOS}>Ubicanos</NavLink></li>
 
       </ul>
-      {(pathname === ROUTE.SHOP || pathname === ROUTE.SEARCH) && (
-        <FiltersToggle>
-          <button className="button-muted button-small" type="button">
-            Filtros &nbsp;
-            <FilterOutlined />
-          </button>
-        </FiltersToggle>
-      )}
+      
       <SearchBar />
       <ul className="navigation-menu">
         <li className="navigation-menu-item">

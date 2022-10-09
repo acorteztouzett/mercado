@@ -8,7 +8,11 @@ const Footer = () => {
 
   const visibleOnlyPath = [
     Route.HOME,
-    Route.SHOP
+    Route.MERCADO1,
+    Route.MERCADO2,
+    Route.MERCADO3,
+    Route.BLOG,
+    Route.UBICANOS,
   ];
 
   return !visibleOnlyPath.includes(pathname) ? null : (

@@ -30,7 +30,7 @@ const PayPalPayment = () => {
                 Paga con Yape facilmente y solo muestra la captura de pantalla(solo Perú)
               </span>
             </div>
-            <div className="payment-img payment-img-paypal" />
+            <div className="payment-img payment-img-visa" />
           </label>
         </div>
       </div>

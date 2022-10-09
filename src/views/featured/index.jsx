@@ -5,7 +5,7 @@ import bannerImg from 'images/banner-destacados.jpeg';
 import React from 'react';
 
 const FeaturedProducts = () => {
-  useDocumentTitle('Productos Destacados');
+  useDocumentTitle('Mercado 2');
   useScrollTop();
 
   const {

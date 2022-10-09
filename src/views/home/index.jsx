@@ -1,7 +1,7 @@
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { MessageDisplay } from 'components/common';
 import { ProductShowcaseGrid } from 'components/product';
-import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes';
+import { FEATURED_PRODUCTS, MERCADO1, MERCADO2, MERCADO3, RECOMMENDED_PRODUCTS, SHOP } from 'constants/routes';
 import {
   useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop
 } from 'hooks';
@@ -30,59 +30,65 @@ const Home = () => {
   return (
     <main className="content">
       <div className="home">
+      <h1 className="text-thin">
+        <strong>Mikhuna Peru, tu mercado digital :)</strong>
+      </h1>
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>Mikhuna Peru, tu mercado digital :)</strong>
+              <strong>Mercado 1</strong>
             </h1>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, blandit eu dignissim sed, scelerisque id velit. Morbi eget leo scelerisque, 
             lacinia nulla nec, sodales turpis. Donec quis sodales diam, at aliquet quam. Morbi mattis, mauris ut vulputate tincidunt, quam augue condimentum eros, id rutrum est ipsum et turpis.
             </p>
             <br />
-            <Link to={SHOP} className="button">
-              Comprar Ahora &nbsp;
+            <Link to={MERCADO1} className="button">
+              Comprar Aqui &nbsp;
               <ArrowRightOutlined />
             </Link>
           </div>
           <div className="banner-img"><img src={bannerImg} alt="" /></div>
         </div>
-        <div className="display">
-          <div className="display-header">
-            <h1>Productos Destacados</h1>
-            <Link to={FEATURED_PRODUCTS}>Ver todos</Link>
+
+        <div className="banner">
+          <div className="banner-desc">
+            <h1 className="text-thin">
+              <strong>Mercado 2</strong>
+            </h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, blandit eu dignissim sed, scelerisque id velit. Morbi eget leo scelerisque, 
+            lacinia nulla nec, sodales turpis. Donec quis sodales diam, at aliquet quam. Morbi mattis, mauris ut vulputate tincidunt, quam augue condimentum eros, id rutrum est ipsum et turpis.
+            </p>
+            <br />
+            <Link to={MERCADO2} className="button">
+              Comprar Aqui &nbsp;
+              <ArrowRightOutlined />
+            </Link>
           </div>
-          {(errorFeatured && !isLoadingFeatured) ? (
-            <MessageDisplay
-              message={errorFeatured}
-              action={fetchFeaturedProducts}
-              buttonLabel="Intenta de nuevo"
-            />
-          ) : (
-            <ProductShowcaseGrid
-              products={featuredProducts}
-              skeletonCount={6}
-            />
-          )}
+          <div className="banner-img"><img src={bannerImg} alt="" /></div>
         </div>
-        <div className="display">
-          <div className="display-header">
-            <h1>Productos Recomendados</h1>
-            <Link to={RECOMMENDED_PRODUCTS}>Ver todos</Link>
+
+        <div className="banner">
+          <div className="banner-desc">
+            <h1 className="text-thin">
+              <strong>Mercado 3</strong>
+            </h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, blandit eu dignissim sed, scelerisque id velit. Morbi eget leo scelerisque, 
+            lacinia nulla nec, sodales turpis. Donec quis sodales diam, at aliquet quam. Morbi mattis, mauris ut vulputate tincidunt, quam augue condimentum eros, id rutrum est ipsum et turpis.
+            </p>
+            <br />
+            <Link to={MERCADO3} className="button">
+              Comprar Aqui &nbsp;
+              <ArrowRightOutlined />
+            </Link>
           </div>
-          {(errorRecommended && !isLoadingRecommended) ? (
-            <MessageDisplay
-              message={errorRecommended}
-              action={fetchRecommendedProducts}
-              buttonLabel="Intenta de nuevo"
-            />
-          ) : (
-            <ProductShowcaseGrid
-              products={recommendedProducts}
-              skeletonCount={6}
-            />
-          )}
+          <div className="banner-img"><img src={bannerImg} alt="" /></div>
         </div>
+
+        
+        
       </div>
     </main>
   );

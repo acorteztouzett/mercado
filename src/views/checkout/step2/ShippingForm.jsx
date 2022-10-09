@@ -71,7 +71,7 @@ const ShippingForm = () => {
                   <label className="d-flex w-100" htmlFor={field.name}>
                     <h5 className="d-flex-grow-1 margin-0">
                       &nbsp; Precio por delivery &nbsp;
-                      <span className="text-subtle">1 dia o menos</span>
+                      <span className="text-subtle">A todo Lima Metropolitana</span>
                     </h5>
                     <h4 className="margin-0">10 PEN</h4>
                   </label>

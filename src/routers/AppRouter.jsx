@@ -43,17 +43,17 @@ const AppRouter = () => (
         <Route
           component={view.Shop}
           exact
-          path={ROUTES.SHOP}
+          path={ROUTES.MERCADO1}
         />
         <Route
           component={view.FeaturedProducts}
           exact
-          path={ROUTES.FEATURED_PRODUCTS}
+          path={ROUTES.MERCADO2}
         />
         <Route
           component={view.RecommendedProducts}
           exact
-          path={ROUTES.RECOMMENDED_PRODUCTS}
+          path={ROUTES.MERCADO3}
         />
         <PublicRoute
           component={view.SignUp}
