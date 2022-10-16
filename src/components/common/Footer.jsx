@@ -13,6 +13,7 @@ const Footer = () => {
     Route.MERCADO3,
     Route.BLOG,
     Route.UBICANOS,
+    Route.PRODUCTOS
   ];
 
   return !visibleOnlyPath.includes(pathname) ? null : (

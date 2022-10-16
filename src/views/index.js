@@ -19,4 +19,5 @@ export { default as Shop } from './shop';
 export { default as ViewProduct } from './view_product';
 export { default as Blog } from './blog';
 export { default as Ubicanos } from './ubicanos';
+export { default as Productos } from './productos';
 

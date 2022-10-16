@@ -2,7 +2,7 @@ import { useDidMount } from 'hooks';
 import { useEffect, useState } from 'react';
 import firebase from '../services/firebase';
 
-const useRecommendedProducts = (itemsCount) => {
+const useRecommendedProducts = (tienda) => {
   const [recommendedProducts, setRecommendedProducts] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -13,7 +13,7 @@ const useRecommendedProducts = (itemsCount) => {
       setLoading(true);
       setError('');
 
-      const docs = await firebase.getRecommendedProducts(itemsCount);
+      const docs = await firebase.getProductsxTienda(tienda);
 
       if (docs.empty) {
         if (didMount) {

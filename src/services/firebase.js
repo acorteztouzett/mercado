@@ -244,6 +244,12 @@ class Firebase {
       .limit(itemsCount)
       .get();
 
+  getProductsxTienda = (tienda) =>
+    this.db
+      .collection("products")
+      .where("tienda", "==", tienda)
+      .get();
+
   addProduct = (id, product) =>
     this.db.collection("products").doc(id).set(product);
 
