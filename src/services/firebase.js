@@ -247,7 +247,7 @@ class Firebase {
   getProductsxTienda = (tienda) =>
     this.db
       .collection("products")
-      .where("tienda", "==", tienda)
+      
       .get();
 
   addProduct = (id, product) =>

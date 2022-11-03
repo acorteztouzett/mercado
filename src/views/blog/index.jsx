@@ -1,7 +1,6 @@
 import { ArrowRightOutlined,ArrowLeftOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import React,{useState, useEffect} from 'react'
-import bannerImg from 'images/banner-mercado-home.jpg';
 import {useDocumentTitle,useScrollTop} from 'hooks';
 
 
@@ -13,14 +12,14 @@ const Blog = () => {
     return (
         <main className="content">
             <div className="blog">
+
                 <div className="banner">
                     <div className="banner-desc">
                         <h1 className="text-thin">
-                        <strong>Como digitalizar tu negocio</strong>
+                        <strong>Cómo digitalizar tu negocio en 8 pasos</strong>
                         </h1>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, blandit eu dignissim sed, scelerisque id velit. Morbi eget leo scelerisque, 
-                        lacinia nulla nec, sodales turpis. Donec quis sodales diam, at aliquet quam. Morbi mattis, mauris ut vulputate tincidunt, quam augue condimentum eros, id rutrum est ipsum et turpis.
+                        En este video, aprenderás los pasos necesarios para digitalizar tu negocio, dado por el creador de contenido Juan Merodio .
                         </p>
                         <br />
                         <button src="#asda" className='button'> 
@@ -28,25 +27,58 @@ const Blog = () => {
                             <ArrowRightOutlined />
                         </button>
                     </div>
-                    <div className="banner-img"><img src={bannerImg} alt="" /></div>
+                    <iframe width="800" height="400" src="https://www.youtube.com/embed/0mJCgdJY9GI" title="Cómo digitalizar tu negocio en 8 pasos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
                 <div className="banner">
-                    <div className="banner-img"><img src={bannerImg} alt="" /></div>
                     <div className="banner-desc">
                         <h1 className="text-thin">
-                        <strong>Beneficios de la digitalización</strong>
+                        <strong>Cómo digitalizar una PYME</strong>
                         </h1>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, blandit eu dignissim sed, scelerisque id velit. Morbi eget leo scelerisque, 
-                        lacinia nulla nec, sodales turpis. Donec quis sodales diam, at aliquet quam. Morbi mattis, mauris ut vulputate tincidunt, quam augue condimentum eros, id rutrum est ipsum et turpis.
+                        En ese video, te enterarás de lo necesario para digitalizar una PYME, enseñado por el creador de contenido Juan Merodio.
                         </p>
                         <br />
                         <button src="#asda" className='button'> 
-                            <ArrowLeftOutlined />
+                            <ArrowRightOutlined />
                             &nbsp; Ver Ahora 
                         </button>       
                     </div>
+                    <iframe width="800" height="400" src="https://www.youtube.com/embed/VlBhQSn8LNE" title="Cómo se DIGITALIZA una PYME (Transformación Digital)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div className="banner">
+                    <div className="banner-desc">
+                        <h1 className="text-thin">
+                        <strong>Por qué digitalizar tu negocio</strong>
+                        </h1>
+                        <p>
+                        En ese video, aprenderás el por qué es necesario digitalizar tu empresa o negocio en estos tiempos, enseñado por el canal de Youtube Emprendedor Eficaz.
+                        </p>
+                        <br />
+                        <button src="#asda" className='button'> 
+                            <ArrowRightOutlined />
+                            &nbsp; Ver Ahora 
+                        </button>       
+                    </div>
+                    <iframe width="800" height="400" src="https://www.youtube.com/embed/_vN3MPrWG10" title="Por qué Digitalizar Tu Negocio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div className="banner">
+                    <div className="banner-desc">
+                        <h1 className="text-thin">
+                        <strong>Digitaliza tu negocio: Las soluciones digitales que te harán crecer</strong>
+                        </h1>
+                        <p>
+                        En ese video, obtendrás lo necesario para digitalizar un negocio, enseñado por el canal de Youtube de Telefónica España.
+                        </p>
+                        <br />
+                        <button src="#asda" className='button'> 
+                            <ArrowRightOutlined />
+                            &nbsp; Ver Ahora 
+                        </button>       
+                    </div>
+                    <iframe width="800" height="400" src="https://www.youtube.com/embed/Tm_Q2gNvbuM" title="Digitaliza tu negocio: Las soluciones digitales que te harán crecer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
             </div>

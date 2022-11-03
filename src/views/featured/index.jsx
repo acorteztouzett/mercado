@@ -10,14 +10,14 @@ import puestoImg from 'images/puesto.jpeg';
 
 //MERCADO 2
 const FeaturedProducts = () => {
-  useDocumentTitle('Mercado 2');
+  useDocumentTitle('Mercado Unicachi');
   useScrollTop();
 
   return (
     <main className="content">
       <section className="product-list-wrapper">
       <h1 className="text-thin">
-        <strong>Bienvenido al mercado: MERCADO2 :)</strong>
+        <strong>Bienvenido al Mercado Unicachi</strong>
       </h1>
 
       <div className='product-display-grid'>

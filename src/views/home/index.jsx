@@ -5,7 +5,9 @@ import { FEATURED_PRODUCTS, MERCADO1, MERCADO2, MERCADO3, RECOMMENDED_PRODUCTS, 
 import {
   useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop
 } from 'hooks';
-import bannerImg from 'images/banner-mercado-home.jpg';
+import bannerMercado1 from 'images/granMercadoMayorista.jpeg';
+import bannerMercado2 from 'images/mercadoUnicachi.jpeg';
+import bannerMercado3 from 'images/mercadoConzac.jpeg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -36,11 +38,10 @@ const Home = () => {
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>Mercado 1</strong>
+              Gran Mercado Mayorista de Lima
             </h1>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, blandit eu dignissim sed, scelerisque id velit. Morbi eget leo scelerisque, 
-            lacinia nulla nec, sodales turpis. Donec quis sodales diam, at aliquet quam. Morbi mattis, mauris ut vulputate tincidunt, quam augue condimentum eros, id rutrum est ipsum et turpis.
+            El Gran Mercado Mayorista de Lima es un centro de abastecimiento zonal de tipo Mayorista que inició actividades en el año 2013, con sus 9 años de existencia lo convierte en un mercado tradicional en su comunidad. Este mercado alberga 1000 puestos fijos y tiene 1000 puestos activos permanentemente. Para comprar aquí, haz click al botón de abajo.
             </p>
             <br />
             <Link to={MERCADO1} className="button">
@@ -48,17 +49,16 @@ const Home = () => {
               <ArrowRightOutlined />
             </Link>
           </div>
-          <div className="banner-img"><img src={bannerImg} alt="" /></div>
+          <div className="banner-img"><img src={bannerMercado1} alt="" /></div>
         </div>
 
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>Mercado 2</strong>
+              Mercado Unicachi
             </h1>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, blandit eu dignissim sed, scelerisque id velit. Morbi eget leo scelerisque, 
-            lacinia nulla nec, sodales turpis. Donec quis sodales diam, at aliquet quam. Morbi mattis, mauris ut vulputate tincidunt, quam augue condimentum eros, id rutrum est ipsum et turpis.
+            El Mercado Unicachi es un centro de abastecimiento zonal de tipo Mixto (minorista/mayorista) que inició actividades en el año 2006, con sus 16 años de existencia lo convierte en un mercado tradicional en su comunidad. Este mercado alberga 500 puestos fijos y tiene 500 puestos activos permanentemente. Para comprar aquí, haz click al botón de abajo.
             </p>
             <br />
             <Link to={MERCADO2} className="button">
@@ -66,17 +66,16 @@ const Home = () => {
               <ArrowRightOutlined />
             </Link>
           </div>
-          <div className="banner-img"><img src={bannerImg} alt="" /></div>
+          <div className="banner-img"><img src={bannerMercado2} alt="" /></div>
         </div>
 
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>Mercado 3</strong>
+            Gran Mercado Mayorista Conzac
             </h1>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lorem magna, blandit eu dignissim sed, scelerisque id velit. Morbi eget leo scelerisque, 
-            lacinia nulla nec, sodales turpis. Donec quis sodales diam, at aliquet quam. Morbi mattis, mauris ut vulputate tincidunt, quam augue condimentum eros, id rutrum est ipsum et turpis.
+            El Gran Mercado Conzac es un centro de abastecimiento zonal de tipo Mixto (minorista/mayorista) que inició actividades en el año 1997, con sus 25 años de existencia lo convierte en un mercado tradicional en su comunidad. Este mercado alberga 997 puestos fijos y tiene 997 puestos activos permanentemente. Para comprar aquí, haz click al botón de abajo.
             </p>
             <br />
             <Link to={MERCADO3} className="button">
@@ -84,7 +83,7 @@ const Home = () => {
               <ArrowRightOutlined />
             </Link>
           </div>
-          <div className="banner-img"><img src={bannerImg} alt="" /></div>
+          <div className="banner-img"><img src={bannerMercado3} alt="" /></div>
         </div>
 
         

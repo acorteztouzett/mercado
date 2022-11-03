@@ -10,14 +10,14 @@ import puestoImg from 'images/puesto.jpeg';
 
 //MERCADO 3
 const RecommendedProducts = () => {
-  useDocumentTitle('Mercado 3');
+  useDocumentTitle('Gran Mercado Mayorista Conzac');
   useScrollTop();
 
   return (
     <main className="content">
       <section className="product-list-wrapper">
       <h1 className="text-thin">
-        <strong>Bienvenido al mercado: MERCADO3 :)</strong>
+        <strong>Bienvenido al Gran Mercado Mayorista Conzac</strong>
       </h1>
 
       <div className='product-display-grid'>

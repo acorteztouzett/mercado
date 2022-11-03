@@ -73,9 +73,9 @@ const Navigation = () => {
       </div>
       <ul className="navigation-menu-main">
         <li><NavLink activeClassName="navigation-menu-active" exact to={ROUTE.HOME}>Inicio</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO1}>Mercado 1</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO2}>Mercado 2</NavLink></li>
-        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO3}>Mercado 3</NavLink></li>
+        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO1}>Gran Mercado Mayorista</NavLink></li>
+        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO2}>Mercado Unicachi</NavLink></li>
+        <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.MERCADO3}>Mercado Conzac</NavLink></li>
         <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.BLOG}>Blog</NavLink></li>
         <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.UBICANOS}>Ubicanos</NavLink></li>
 
